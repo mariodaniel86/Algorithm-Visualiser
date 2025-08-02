@@ -10,4 +10,9 @@ import lombok.Setter;
 @Setter
 public class Graph {
     private List<Node> nodes = new ArrayList<Node>();
+
+    public Graph() {
+
+    }
+
 }

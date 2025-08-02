@@ -1,20 +1,19 @@
 package av.models.algorithms.search;
 
-import av.models.structure.Node;
+import av.models.structure.*;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class DFS extends Search {
-    public DFS(Node startNode) {
-        super(startNode);
-
-
+public class DFS implements SearchStrategy {
+    @Override
+    public void search(Node startNode) {
+        runDFS(startNode);
     }
 
-    public void search() {
+    private void runDFS(Node node) {
 
     }
 }
